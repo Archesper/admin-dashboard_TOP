@@ -12,9 +12,109 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template: 1fr 6fr / minmax(200px, 1fr) 4fr;
+    grid-template: 1fr 6fr / minmax(200px, 1fr) 5fr;
     height: 100%;
 }
+
+/* HEADER STYLING */
+
+header {
+    padding: 12px 24px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.header_top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.header_top img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header_top input {
+    background-color: #e4e4e7;
+    border: none;
+    border-radius: 20px;
+    width: 60%;
+    padding: 4px;
+}
+
+.header_top svg {
+    width: 24px;
+}
+
+.header_top p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 15px;
+}
+
+.search_group, .icon_group {
+    display: flex;
+    align-items: center;
+}
+
+.icon_group {
+    margin-left: auto;
+    margin-right: 1rem;
+    gap: 15px;
+}
+
+.search_group {
+    margin-left: 10px;
+    flex-grow: 3;
+    gap: 15px;
+}
+
+.header_bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 0;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting p {
+    margin: 0;
+    font-weight: bold;
+}
+
+#greeting_span {
+    font-size: 0.8rem;
+}
+
+#username {
+    font-size: 1.4rem;
+}
+
+.header_bottom img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    grid-row: span 2;
+}
+
+.button_group {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+.button_group button {
+    color: white;
+    background-color: #0ea5e9;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 50px;
+}
+
+/* NAV STYLING */
 
 .nav_header {
     display: flex;
