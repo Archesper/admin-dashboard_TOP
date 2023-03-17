@@ -48,9 +48,9 @@ header {
 }
 
 .header_top p {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin: 0 15px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 0 10px;
 }
 
 .search_group, .icon_group {
@@ -160,6 +160,58 @@ ul svg {
     fill :#f8fafc;
 }
 
+/* MAIN CONTENT STYLING */
+
 main {
     background-color: #e5e7eb;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    border-right: solid;
+    border-color: red;
+    padding: 4px 12px;
+}
+
+.projects > p {
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+}
+
+.card {
+    background-color: white;
+    padding: 10px 20px;
+    border-left: 8px solid #eab308;
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px rgb(175, 175, 175);
+}
+
+.card p {
+    margin: 4px;
+}
+
+.card svg {
+    width: 24px;
+    fill: rgb(50, 50, 50);
+}
+
+.card_header {
+    font-weight: bold;
+}
+
+.card_description {
+    color: #7a7878;
+}
+
+.card_buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin: 8px;
 }
