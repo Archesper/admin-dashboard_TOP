@@ -166,11 +166,10 @@ main {
     background-color: #e5e7eb;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 12px;
 }
 
 .projects {
-    border-right: solid;
-    border-color: red;
     padding: 4px 12px;
 }
 
@@ -181,7 +180,7 @@ main {
 .cards {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
 }
 
 .card {
@@ -190,6 +189,7 @@ main {
     border-left: 8px solid #eab308;
     border-radius: 4px;
     box-shadow: 1px 2px 3px rgb(175, 175, 175);
+    height: 200px;
 }
 
 .card p {
@@ -214,4 +214,74 @@ main {
     gap: 10px;
     justify-content: end;
     margin: 8px;
+}
+
+.side_content {
+    height: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 4px 12px;
+    justify-items: center;
+}
+
+.announcements, .trending_wrapper {
+    width: clamp(200px, 70%, 400px);
+}
+
+.announcements > p, .announcement_header {
+    font-weight: bold;
+}
+
+.announcement_header, .announcement {
+    margin: 0;
+}
+
+.announcement_header {
+    font-size: 0.9rem;
+}
+
+.announcement {
+    color: #7a7878;
+    font-size: 0.8rem;
+
+}
+
+.announcements_wrapper {
+    border-radius: 8px;
+    padding: 32px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 1px 1px 1px rgb(175, 175, 175);
+}
+
+.announcements  hr {
+    width: 100%;
+    margin: 0;
+}
+
+.trending_wrapper {
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 25px;
+    box-shadow: 1px 1px 1px rgb(175, 175, 175);
+}
+
+.trending_wrapper img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.trending_wrapper p {
+    margin: 0;
+}
+
+.user_title {
+    color: #7a7878;
+    font-size: 0.8rem;
 }
